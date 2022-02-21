@@ -1,0 +1,117 @@
+:root {
+    --primary-color: ghostwhite;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background: url('./images/leaves.jpg'); 
+
+}
+
+textarea {
+  background: transparent;
+  resize: none;
+  color: #000000;
+  border: 1px solid black;
+  /* padding: 5px; */
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: var(--primary-color);
+  /* border-radius: 0;
+  border-bottom: 1px solid black; */
+  /* height: 5%; */
+  margin: -70px;
+  padding: auto -10px;
+}
+
+/* .description{
+  var(--primary-color)-space: pre-wrap;
+} */
+
+/* #time-block{
+  text-align: left;
+} */
+
+.row {
+  /* var(--primary-color)-space: pre-wrap; */
+  height: 80px;
+  justify-content: center;
+}
+
+.hour {
+  background-color: black;
+  color: var(--primary-color);
+  justify-self: left;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: var(--primary-color);
+}
+
+.present {
+  background-color: #ff6961;
+  color: var(--primary-color);
+}
+
+.future {
+  background-color: #217e27;
+  color: var(--primary-color);
+}
+
+.saveBtn {
+  background-color: black;
+  color: var(--primary-color);
+  border: none;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+}
+
+h1, #currentDay {
+  font-family: 'Homemade Apple';
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 10px;
+}
+
+.planner-container {
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin: 20px auto;
+  opacity: 95%;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .planner-container {
+    padding: auto -50px;
+    margin: 0px 0px;
+  }
+
+  .jumbotron {
+    text-align: center;
+    background-color: transparent;
+    color: var(--primary-color);
+    margin: 5px;
+  }
+
+  body {
+    font-size: 12px;
+  }
+
+  * {
+    box-sizing: content-box;
+  }
+}
